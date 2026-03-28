@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angkorithm Academy - Home</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body> 
+
+<header>
+    <div class="logo">Angkorithm Academy</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('coursesMenu')">Courses</span>
+                <div id="coursesMenu" class="dropdown-menu">
+                    <a href="courses.html#web">Web Development</a>
+                    <a href="courses.html#mobile">Mobile Development</a>
+                    <a href="courses.html#frontend">Front-End</a>
+                    <a href="courses.html#backend">Back-End</a>
+                    <a href="courses.html#fullstack">Full-Stack</a>
+                    <a href="courses.html#ai">AI / ML</a>
+                    <a href="courses.html#datascience">Data Science</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('eventsMenu')">Events</span>
+                <div id="eventsMenu" class="dropdown-menu">
+                    <a href="events.html#jobs">Jobs</a>
+                    <a href="events.html#workshops">Workshops</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="section">
+    <h1>Welcome to Angkorithm Academy</h1> <br/>
+        <p>Empowering students worldwide with modern Computer Science and STEM skills.</p>
+        <p>Learn Web Development, AI, Mobile Apps, and Data Science through hands-on courses designed to prepare you for real careers.</p>
+        <p>Our mission is to inspire creativity, confidence, and leadership, helping learners everywhere become innovators and future leaders in technology.</p>
+</section>
+
+<section id="gallery" class="section">
+    <h2>Our Highlights</h2>
+    <div class="picture-grid">
+        <div class="grid-item">
+            <img src="pics/pic1.jpg" alt="Highlight 1">
+            <p>Web Development Workshop</p>
+        </div>
+        <div class="grid-item">
+            <img src="pics/pic2.jpg" alt="Highlight 2">
+            <p>AI & Machine Learning Projects</p>
+        </div>
+        <div class="grid-item">
+            <img src="pics/pic3.jpg" alt="Highlight 3">
+            <p>Mobile App Development</p>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleDropdown(id){
+    document.getElementById(id).classList.toggle('show');
+}
+function toggleDropdown(id){
+    const menu = document.getElementById(id);
+    menu.classList.toggle('show');
+}
+
+// Close dropdowns if clicking outside
+document.addEventListener('click', function(event){
+    const dropbtns = document.querySelectorAll('.dropbtn');
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+
+    let clickedOnDropbtn = false;
+    dropbtns.forEach(btn => {
+        if(btn.contains(event.target)){
+            clickedOnDropbtn = true;
+        }
+    });
+
+    if(!clickedOnDropbtn){
+        dropdowns.forEach(menu => menu.classList.remove('show'));
+    }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angkorithm Academy - Courses</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Angkorithm Academy</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('coursesMenu')">Courses</span>
+                <div id="coursesMenu" class="dropdown-menu">
+                    <a href="#web">Web Development</a>
+                    <a href="#mobile">Mobile Development</a>
+                    <a href="#frontend">Front-End</a>
+                    <a href="#backend">Back-End</a>
+                    <a href="#fullstack">Full-Stack</a>
+                    <a href="#ai">AI / ML</a>
+                    <a href="#datascience">Data Science</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('eventsMenu')">Events</span>
+                <div id="eventsMenu" class="dropdown-menu">
+                    <a href="events.html#jobs">Jobs</a>
+                    <a href="events.html#workshops">Workshops</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Web Development -->
+<section id="web" class="section">
+    <h2>Web Development Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/html:css.jpg">
+            <h3>HTML & CSS Basics</h3>
+            <p>Learn the foundations of web development with HTML & CSS.</p>
+            <p class="price">Free</p>
+            <button onclick="openEnroll('HTML & CSS Basics')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/javascript.jpg">
+            <h3>JavaScript Essentials</h3>
+            <p>Master core JavaScript concepts for interactive websites.</p>
+            <p class="price">Fee: $60</p>
+            <button onclick="openEnroll('JavaScript Essentials')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/react.jpg">
+            <h3>React JS Fundamentals</h3>
+            <p>Build dynamic web apps using React JS and modern tools.</p>
+            <p class="price">Fee: $70</p>
+            <button onclick="openEnroll('React JS Fundamentals')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/node:express.jpg">
+            <h3>Node.js & Express</h3>
+            <p>Create server-side applications and APIs with Node.js.</p>
+            <p class="price">Fee: $80</p>
+            <button onclick="openEnroll('Node.js & Express')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/fullstack.jpg">
+            <h3>Full-Stack Web Project</h3>
+            <p>Integrate front-end and back-end skills to build projects.</p>
+            <p class="price">Fee: $100</p>
+            <button onclick="openEnroll('Full-Stack Web Project')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Development -->
+<section id="mobile" class="section">
+    <h2>Mobile Development Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/flutter.jpg">
+            <h3>Flutter Basics</h3>
+            <p>Create your first cross-platform mobile apps with Flutter.</p>
+            <p class="price">Fee: $60</p>
+            <button onclick="openEnroll('Flutter Basics')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/reactnative.jpg">
+            <h3>React Native Fundamentals</h3>
+            <p>Develop native mobile apps with React Native framework.</p>
+            <p class="price">Fee: $70</p>
+            <button onclick="openEnroll('React Native Fundamentals')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/uxui.jpg">
+            <h3>Mobile UI/UX Design</h3>
+            <p>Learn user interface and user experience design for apps.</p>
+            <p class="price">Free</p>
+            <button onclick="openEnroll('Mobile UI/UX Design')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/advanceflutter.jpg">
+            <h3>Advanced Flutter Apps</h3>
+            <p>Build advanced features for Flutter mobile applications.</p>
+            <p class="price">Fee: $90</p>
+            <button onclick="openEnroll('Advanced Flutter Apps')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/capstone.jpg">
+            <h3>Mobile Project Capstone</h3>
+            <p>Apply your skills in a real-world mobile project.</p>
+            <p class="price">Fee: $120</p>
+            <button onclick="openEnroll('Mobile Project Capstone')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- Front-End -->
+<section id="frontend" class="section">
+    <h2>Front-End Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/advancehtmlcss.jpg">
+            <h3>HTML5 & CSS3 Advanced</h3>
+            <p>Deep dive into modern HTML5 & CSS3 techniques.</p>
+            <p class="price">Fee: $55</p>
+            <button onclick="openEnroll('HTML5 & CSS3 Advanced')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/javascriptes6.jpg">
+            <h3>JavaScript ES6+</h3>
+            <p>Learn modern JavaScript syntax and advanced concepts.</p>
+            <p class="price">Fee: $65</p>
+            <button onclick="openEnroll('JavaScript ES6+')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/reactcom.jpg">
+            <h3>React Components</h3>
+            <p>Build reusable components and UI with React.</p>
+            <p class="price">Fee: $75</p>
+            <button onclick="openEnroll('React Components')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/vue.jpg">
+            <h3>Vue.js Essentials</h3>
+            <p>Get started with Vue.js for modern front-end apps.</p>
+            <p class="price">Fee: $70</p>
+            <button onclick="openEnroll('Vue.js Essentials')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/frontcapstone.jpg">
+            <h3>Front-End Capstone Project</h3>
+            <p>Apply your front-end skills in a practical project.</p>
+            <p class="price">Fee: $100</p>
+            <button onclick="openEnroll('Front-End Capstone Project')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- Back-End -->
+<section id="backend" class="section">
+    <h2>Back-End Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/node.jpg">
+            <h3>Node.js Basics</h3>
+            <p>Introduction to server-side programming with Node.js.</p>
+            <p class="price">Fee: $60</p>
+            <button onclick="openEnroll('Node.js Basics')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/express.jpg">
+            <h3>Express.js & APIs</h3>
+            <p>Learn building APIs and backend services with Express.</p>
+            <p class="price">Fee: $70</p>
+            <button onclick="openEnroll('Express.js & APIs')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/database.jpg">
+            <h3>Database Integration</h3>
+            <p>Connect applications to MongoDB and SQL databases.</p>
+            <p class="price">Fee: $65</p>
+            <button onclick="openEnroll('Database Integration')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/authen.jpg">
+            <h3>Authentication & Security</h3>
+            <p>Implement login systems and security best practices.</p>
+            <p class="price">Fee: $80</p>
+            <button onclick="openEnroll('Authentication & Security')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/backendproject.jpg">
+            <h3>Back-End Capstone</h3>
+            <p>Build complete backend solutions for real projects.</p>
+            <p class="price">Fee: $100</p>
+            <button onclick="openEnroll('Back-End Capstone')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- Full-Stack -->
+<section id="fullstack" class="section">
+    <h2>Full-Stack Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/mern.jpg">
+            <h3>MERN Stack Basics</h3>
+            <p>Learn MongoDB, Express, React, Node.js stack fundamentals.</p>
+            <p class="price">Fee: $100</p>
+            <button onclick="openEnroll('MERN Stack Basics')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/fullstackproject.jpg">
+            <h3>Full-Stack Projects</h3>
+            <p>Build end-to-end web applications integrating front and back end.</p>
+            <p class="price">Fee: $120</p>
+            <button onclick="openEnroll('Full-Stack Projects')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/devops.jpg">
+            <h3>Deployment & DevOps</h3>
+            <p>Deploy full-stack apps to cloud platforms and servers.</p>
+            <p class="price">Fee: $90</p>
+            <button onclick="openEnroll('Deployment & DevOps')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/advancefullstack.jpg">
+            <h3>Advanced Full-Stack</h3>
+            <p>Advanced techniques for building scalable full-stack apps.</p>
+            <p class="price">Fee: $130</p>
+            <button onclick="openEnroll('Advanced Full-Stack')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/fullstackcapstone.jpeg">
+            <h3>Capstone Full-Stack Project</h3>
+            <p>End-to-end project demonstrating full-stack proficiency.</p>
+            <p class="price">Fee: $150</p>
+            <button onclick="openEnroll('Capstone Full-Stack Project')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- AI / ML -->
+<section id="ai" class="section">
+    <h2>AI / ML Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/pythonai.jpg">
+            <h3>Python for AI</h3>
+            <p>Learn Python basics for AI and ML programming.</p>
+            <p class="price">Free</p>
+            <button onclick="openEnroll('Python for AI')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/mlbasic.jpg">
+            <h3>Machine Learning Basics</h3>
+            <p>Introduction to ML concepts, algorithms, and models.</p>
+            <p class="price">Fee: $80</p>
+            <button onclick="openEnroll('Machine Learning Basics')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/deeplearning.jpg">
+            <h3>Deep Learning Fundamentals</h3>
+            <p>Learn neural networks and deep learning essentials.</p>
+            <p class="price">Fee: $100</p>
+            <button onclick="openEnroll('Deep Learning Fundamentals')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/ailab.jpg">
+            <h3>AI Project Lab</h3>
+            <p>Work on hands-on AI projects using real datasets.</p>
+            <p class="price">Fee: $120</p>
+            <button onclick="openEnroll('AI Project Lab')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/capstoneai.jpg">
+            <h3>Capstone AI Project</h3>
+            <p>Build a complete AI/ML application as a final project.</p>
+            <p class="price">Fee: $150</p>
+            <button onclick="openEnroll('Capstone AI Project')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- Data Science -->
+<section id="datascience" class="section">
+    <h2>Data Science Courses</h2>
+    <div class="card-grid">
+        <div class="course-card">
+            <img src="pics/dataanalysispy.jpg">
+            <h3>Data Analysis with Python</h3>
+            <p>Analyze datasets and generate insights with Python.</p>
+            <p class="price">Fee: $70</p>
+            <button onclick="openEnroll('Data Analysis with Python')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/numpandas.jpg">
+            <h3>Pandas & NumPy Essentials</h3>
+            <p>Learn data manipulation and numerical computing with Python.</p>
+            <p class="price">Fee: $60</p>
+            <button onclick="openEnroll('Pandas & NumPy Essentials')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/datavisual.jpg">
+            <h3>Data Visualization</h3>
+            <p>Create insightful charts and dashboards for data projects.</p>
+            <p class="price">Fee: $65</p>
+            <button onclick="openEnroll('Data Visualization')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/mldatascience.jpg">
+            <h3>Machine Learning for Data Science</h3>
+            <p>Apply ML algorithms for data analysis and prediction.</p>
+            <p class="price">Fee: $90</p>
+            <button onclick="openEnroll('ML for Data Science')">Enroll</button>
+        </div>
+        <div class="course-card">
+            <img src="pics/datasciencecapstone.jpg">
+            <h3>Capstone Data Science Project</h3>
+            <p>Combine data science skills in a real-world project.</p>
+            <p class="price">Fee: $120</p>
+            <button onclick="openEnroll('Capstone Data Science Project')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<!-- ENROLL POPUP -->
+<div class="popup" id="enrollPopup">
+    <div class="popup-content">
+        <h3>Enroll in Course</h3>
+        <input type="text" id="courseName" readonly>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button onclick="submitEnroll()">Submit</button>
+    </div>
+</div>
+
+<script>
+function toggleDropdown(id){
+    document.getElementById(id).classList.toggle('show');
+}
+function openEnroll(name){
+    document.getElementById('courseName').value = name;
+    document.getElementById('enrollPopup').style.display='flex';
+}
+function submitEnroll(){
+    alert('Thank you for enrolling!');
+    document.getElementById('enrollPopup').style.display='none';
+}
+function toggleDropdown(id){
+    const menu = document.getElementById(id);
+    menu.classList.toggle('show');
+}
+
+// Close dropdowns if clicking outside
+document.addEventListener('click', function(event){
+    const dropbtns = document.querySelectorAll('.dropbtn');
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+
+    let clickedOnDropbtn = false;
+    dropbtns.forEach(btn => {
+        if(btn.contains(event.target)){
+            clickedOnDropbtn = true;
+        }
+    });
+
+    if(!clickedOnDropbtn){
+        dropdowns.forEach(menu => menu.classList.remove('show'));
+    }
+});
+</script>
+
+
+</body>
+</html>

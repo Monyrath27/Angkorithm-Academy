@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angkorithm Academy - About</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Angkorithm Academy</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('coursesMenu')">Courses</span>
+                <div id="coursesMenu" class="dropdown-menu">
+                    <a href="courses.html#web">Web Development</a>
+                    <a href="courses.html#mobile">Mobile Development</a>
+                    <a href="courses.html#frontend">Front-End</a>
+                    <a href="courses.html#backend">Back-End</a>
+                    <a href="courses.html#fullstack">Full-Stack</a>
+                    <a href="courses.html#ai">AI / ML</a>
+                    <a href="courses.html#datascience">Data Science</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('eventsMenu')">Events</span>
+                <div id="eventsMenu" class="dropdown-menu">
+                    <a href="events.html#jobs">Jobs</a>
+                    <a href="events.html#workshops">Workshops</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about" class="section">
+    <section id="about">
+        <h1>About Angkorithm Academy</h1>
+            <p>Hello! I am <strong>Prak Keomonyrath</strong>, a Cambodian Computer Science student and the founder of <strong>Angkorithm Academy</strong>. I started this platform with a vision to empower students worldwide, especially young women and underrepresented learners, to excel in STEM and technology.</p>
+
+            <h2>Our Vision</h2>
+            <p>To create a world where every student has equal access to high-quality education in technology and STEM, and the opportunity to become innovators, problem-solvers, and leaders in their communities.</p>
+            <br>
+            <h2>Our Mission</h2>
+                <ul>
+                    <li>Provide affordable, high-quality, and practical courses in IT and STEM fields, including Web Development, AI, Mobile Apps, and Data Science.</li>
+                    <li>Offer both <strong>free and paid courses</strong> to ensure accessibility for all learners.</li>
+                    <li>Equip students with real-world skills, hands-on projects, and <strong>certificates</strong> to enhance career opportunities.</li>
+                    <li>Inspire confidence, creativity, and leadership among students globally.</li>
+                    <li>Support Cambodian students while building a platform that connects learners worldwide.</li>
+                </ul>
+            <br>
+            <h2>What We Offer</h2>
+                <p>At Angkorithm Academy, students can explore:</p>
+                <ul>
+                    <li>Interactive online courses designed by industry professionals.</li>
+                    <li>Practical projects that simulate real-world challenges.</li>
+                    <li>Guidance, mentorship, and community support for learners at every level.</li>
+                    <li>Certificates of completion to showcase skills to employers and universities.</li>
+                </ul>
+            <br>
+            <h2>Why Choose Angkorithm Academy?</h2>
+                <p>We combine accessibility, quality, and innovation to ensure that students worldwide—regardless of background—can unlock their potential and thrive in technology careers. Our platform is not just about learning; it’s about empowering the next generation of global tech leaders.</p>
+
+                <p>Join us at <strong>Angkorithm Academy</strong> and start building your future in STEM today.</p>
+    </section>
+        <div class="slider">
+            <img src="pics/Me1.jpg">
+            <img src="pics/Me2.jpg">
+            <img src="pics/Me3.jpg">
+            <img src="pics/Me4.jpg">
+
+        </div>
+    </section>
+
+<script>
+function toggleDropdown(id){
+    document.getElementById(id).classList.toggle('show');
+}
+function toggleDropdown(id){
+    const menu = document.getElementById(id);
+    menu.classList.toggle('show');
+}
+
+// Close dropdowns if clicking outside
+document.addEventListener('click', function(event){
+    const dropbtns = document.querySelectorAll('.dropbtn');
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+
+    let clickedOnDropbtn = false;
+    dropbtns.forEach(btn => {
+        if(btn.contains(event.target)){
+            clickedOnDropbtn = true;
+        }
+    });
+
+    if(!clickedOnDropbtn){
+        dropdowns.forEach(menu => menu.classList.remove('show'));
+    }
+});
+</script>
+
+
+</body>
+</html>

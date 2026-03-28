@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angkorithm Academy - Contact</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Angkorithm Academy</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedbacks.html">Feedbacks</a></li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('coursesMenu')">Courses</span>
+                <div id="coursesMenu" class="dropdown-menu">
+                    <a href="courses.html#web">Web Development</a>
+                    <a href="courses.html#mobile">Mobile Development</a>
+                    <a href="courses.html#frontend">Front-End</a>
+                    <a href="courses.html#backend">Back-End</a>
+                    <a href="courses.html#fullstack">Full-Stack</a>
+                    <a href="courses.html#ai">AI / ML</a>
+                    <a href="courses.html#datascience">Data Science</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span class="dropbtn" onclick="toggleDropdown('eventsMenu')">Events</span>
+                <div id="eventsMenu" class="dropdown-menu">
+                    <a href="events.html#jobs">Jobs</a>
+                    <a href="events.html#workshops">Workshops</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><i class="fa fa-map-marker-alt"></i> Phnom Penh, Cambodia</p>
+        <p><i class="fa fa-phone"></i> +855 61 291 159</p>
+        <p><i class="fa fa-envelope"></i> info@angkorithmacademy.com</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/18QHKdomKT/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/_.monyrath._?igsh=MTJzampjNzZrODRraA%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Monyrath27" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/prak-keomonyrath-74aa05325" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <div class="map">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.121789312345!2d104.8791234!3d11.562345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095123456789ab%3A0xcdef123456789abc!2sPhnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2sus!4v1671234567890!5m2!1sen!2sus" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<script>
+function toggleDropdown(id){
+    document.getElementById(id).classList.toggle('show');
+}
+function toggleDropdown(id){
+    const menu = document.getElementById(id);
+    menu.classList.toggle('show');
+}
+
+// Close dropdowns if clicking outside
+document.addEventListener('click', function(event){
+    const dropbtns = document.querySelectorAll('.dropbtn');
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+
+    let clickedOnDropbtn = false;
+    dropbtns.forEach(btn => {
+        if(btn.contains(event.target)){
+            clickedOnDropbtn = true;
+        }
+    });
+
+    if(!clickedOnDropbtn){
+        dropdowns.forEach(menu => menu.classList.remove('show'));
+    }
+});
+</script>
+
+</body>
+</html>
